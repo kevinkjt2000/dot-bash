@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+ELLIPSIS_PROTO=ssh
+
 export PATH=$PATH:~/.ellipsis/bin
 
 # Path to the bash it configuration
