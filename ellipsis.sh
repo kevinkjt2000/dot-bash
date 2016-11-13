@@ -4,7 +4,6 @@
 
 pkg.install() {
   git submodule update --init --recursive
-  fs.link_files $PKG_PATH
 }
 
 pkg.pull() {
