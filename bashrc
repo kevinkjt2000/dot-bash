@@ -1,23 +1,23 @@
 #!/usr/bin/env bash
 
-ELLIPSIS_PROTO=ssh
+setup_bash_it() {
+  export BASH_IT="$HOME/.bash_it"
+  export BASH_IT_THEME='bobby'
+  export BASH_IT_AUTOMATIC_RELOAD_AFTER_CONFIG_CHANGE=1
+  export SCM_CHECK=true  # Show SCM status in prompt
+  source $BASH_IT/bash_it.sh
+}
 
-export PATH=$PATH:~/.ellipsis/bin
+setup_ellipsis() {
+  export ELLIPSIS_PROTO=ssh
+  export PATH=$PATH:~/.ellipsis/bin
+}
 
-# Path to the bash it configuration
-export BASH_IT="$HOME/.bash_it"
+setup_random_bash_variables() {
+  unset MAILCHECK  # Never check mail
+}
 
-# Lock and Load a custom theme file
-# location /.bash_it/themes/
-export BASH_IT_THEME='bobby'
+setup_bash_it
+setup_ellipsis
+setup_random_bash_variables
 
-# Don't check mail when opening terminal.
-unset MAILCHECK
-
-# Set this to false to turn off version control status checking within the prompt for all themes
-export SCM_CHECK=true
-
-export BASH_IT_AUTOMATIC_RELOAD_AFTER_CONFIG_CHANGE=1
-
-# Load Bash It
-source $BASH_IT/bash_it.sh
