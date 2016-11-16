@@ -10,7 +10,7 @@ setup_bash_it() {
 
 setup_ellipsis() {
   export ELLIPSIS_PROTO=ssh
-  export PATH=$PATH:~/.ellipsis/bin
+  export PATH=$HOME/.ellipsis/bin:$PATH
 }
 
 setup_random_bash_variables() {
@@ -20,4 +20,6 @@ setup_random_bash_variables() {
 setup_bash_it
 setup_ellipsis
 setup_random_bash_variables
+
+export PATH=$HOME/.local/bin:$PATH
 
