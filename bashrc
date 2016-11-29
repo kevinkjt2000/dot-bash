@@ -5,6 +5,10 @@
 
 alias ls='ls --color=auto'
 
+add_to_path() {
+  export PATH="$1":$PATH
+}
+
 setup_bash_it() {
   export BASH_IT="$HOME/.bash_it"
   export BASH_IT_THEME='bobby'
@@ -15,7 +19,7 @@ setup_bash_it() {
 
 setup_ellipsis() {
   export ELLIPSIS_PROTO=ssh
-  export PATH=$HOME/.ellipsis/bin:$PATH
+  add_to_path $HOME/.ellipsis/bin
 }
 
 setup_random_bash_variables() {
@@ -26,5 +30,5 @@ setup_bash_it
 setup_ellipsis
 setup_random_bash_variables
 
-export PATH=$HOME/.local/bin:$PATH
+add_to_path $HOME/.local/bin
 
