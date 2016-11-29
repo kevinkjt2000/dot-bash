@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+
 setup_bash_it() {
   export BASH_IT="$HOME/.bash_it"
   export BASH_IT_THEME='bobby'
