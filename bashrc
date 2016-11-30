@@ -3,7 +3,10 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
+create_aliases() {
+  alias grep='grep --color=auto --exclude=*~'
+  alias ls='ls --color=auto'
+}
 
 add_to_path() {
   export PATH="$1":$PATH
@@ -26,9 +29,13 @@ setup_random_bash_variables() {
   unset MAILCHECK  # Never check mail
 }
 
+create_aliases
+
 setup_bash_it
 setup_ellipsis
 setup_random_bash_variables
 
 add_to_path $HOME/.local/bin
+
+export P4CONFIG=.p4config
 
