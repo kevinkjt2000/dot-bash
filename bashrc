@@ -28,7 +28,7 @@ setup_ellipsis() {
 setup_random_bash_variables() {
   export EDITOR=vim
   unset MAILCHECK  # Never check mail
-
+  tput smkx
   export NO_AT_BRIDGE=1 # http://unix.stackexchange.com/questions/230238
 }
 
