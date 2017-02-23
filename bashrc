@@ -9,10 +9,6 @@ create_aliases() {
 	alias xclip='xclip -selection clipboard'
 }
 
-add_to_path() {
-	export PATH="$1":"$PATH"
-}
-
 setup_ellipsis() {
 	export ELLIPSIS_PROTO=ssh
 	add_to_path $HOME/.ellipsis/bin
