@@ -6,7 +6,6 @@
 create_aliases() {
 	alias grep='grep --color=auto --exclude=*~'
 	alias ls='ls --color=auto'
-	alias xclip='xclip -selection clipboard'
 }
 
 setup_ellipsis() {
