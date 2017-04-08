@@ -8,6 +8,10 @@ add_to_path "$HOME/.cargo/bin"
 add_to_path "$HOME/.rvm/bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_CACHE_HOME=$HOME/.cache
+export XDG_DATA_HOME=$HOME/.local/share
+
 if [ -n "$BASH" ] && [ -r ~/.bashrc ]; then
 	. ~/.bashrc
 fi
