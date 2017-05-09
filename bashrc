@@ -41,7 +41,6 @@ setup_environment_variables() {
 }
 
 setup_all_the_bash_stuff() {
-	tput smkx  # Fix delete key interopability
 	setup_bash_it
 	setup_environment_variables
 }
