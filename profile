@@ -9,7 +9,7 @@ add_to_path "$HOME/.rvm/bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # Enable touch screen scrolling for firefox
-env MOZ_USE_XINPUT2=1
+export MOZ_USE_XINPUT2=1
 
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CACHE_HOME=$HOME/.cache
