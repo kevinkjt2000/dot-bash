@@ -8,7 +8,6 @@ main() {
 	setup_ellipsis
 
 	add_to_path $HOME/.local/bin
-	add_to_path $HOME/.cabal/bin
 }
 
 create_aliases() {
