@@ -39,6 +39,7 @@ setup_environment_variables() {
 	export HISTSIZE=100000  # More command history! YAY!
 	export HISTFILESIZE=10000000  # and the space to store those commands
 	export HISTCONTROL=ignoreboth  # Ignore duplicate commands and commands that start with ' '
+	export HISTCONTROL+=':erasedups'  # Erase duplicates form history
 	export HISTIGNORE='ls:bg:fg:history'
 	safe_append_prompt_command 'history -a'  # Store history immediately
 }
