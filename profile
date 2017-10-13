@@ -8,6 +8,9 @@ add_to_path "$HOME/.cargo/bin"
 add_to_path "$HOME/.rvm/bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
 # Enable touch screen scrolling for firefox
 export MOZ_USE_XINPUT2=1
 
