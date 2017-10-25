@@ -2,8 +2,6 @@
 [[ $- != *i* ]] && return
 
 main() {
-	create_aliases
-
 	setup_all_the_bash_stuff
 	setup_ellipsis
 
@@ -17,6 +15,7 @@ main() {
 create_aliases() {
 	alias grep='grep --color=auto --exclude=*~'
 	alias ls='ls --color=auto'
+	command_exists thefuck && eval $(thefuck --alias)
 }
 
 setup_ellipsis() {
@@ -47,6 +46,7 @@ setup_environment_variables() {
 setup_all_the_bash_stuff() {
 	setup_bash_it
 	setup_environment_variables
+	create_aliases
 }
 
 main
