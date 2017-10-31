@@ -41,6 +41,7 @@ setup_environment_variables() {
 	export HISTCONTROL+=':erasedups'  # Erase duplicates form history
 	export HISTIGNORE='ls:bg:fg:history'
 	safe_append_prompt_command 'history -a'  # Store history immediately
+	export GPG_TTY=$(tty)  # Enables interactive password entry for gpg
 }
 
 setup_all_the_bash_stuff() {
