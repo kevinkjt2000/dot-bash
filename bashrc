@@ -44,6 +44,7 @@ setup_environment_variables() {
 	export HISTIGNORE='ls:bg:fg:history'
 	safe_append_prompt_command 'history -a'  # Store history immediately
 	export GPG_TTY=$(tty)  # Enables interactive password entry for gpg
+	export CHROME_BIN=chromium  # Enables angular to find chrome exe
 }
 
 setup_all_the_bash_stuff() {
