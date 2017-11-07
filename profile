@@ -22,6 +22,6 @@ if [ -n "$BASH" ] && [ -r ~/.bashrc ]; then
 	. ~/.bashrc
 fi
 
-if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ]; then
+if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ] && [ -z "$TMUX" ] && [ -z "$SSH_CONNECTION" ]; then
 	exec startx
 fi
