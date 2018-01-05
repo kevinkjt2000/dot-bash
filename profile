@@ -3,6 +3,8 @@ add_to_path() {
 }
 export -f add_to_path
 
+[[ -s "/usr/lib/ccache/bin" ]] && add_to_path "/usr/lib/ccache/bin"
+
 add_to_path "$HOME/.cargo/bin"
 
 add_to_path "$HOME/.rvm/bin"
