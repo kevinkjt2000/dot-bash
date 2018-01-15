@@ -45,6 +45,7 @@ setup_environment_variables() {
 	safe_append_prompt_command 'history -a'  # Store history immediately
 	export GPG_TTY=$(tty)  # Enables interactive password entry for gpg
 	export CHROME_BIN=chromium  # Enables angular to find chrome exe
+	export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 }
 
 setup_all_the_bash_stuff() {
