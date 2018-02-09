@@ -17,7 +17,7 @@ main() {
 create_aliases() {
 	alias grep='grep --color=auto --exclude=*~'
 	alias ls='ls --color=auto'
-	command_exists thefuck && eval $(thefuck --alias yari)
+	command_exists thefuck && eval $(thefuck --alias shimatta)
 }
 
 setup_ellipsis() {
