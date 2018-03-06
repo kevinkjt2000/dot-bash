@@ -10,6 +10,8 @@ main() {
 	export NVM_DIR="$HOME/.nvm"
 	[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 	[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+	add_to_path $HOME/.config/yarn/global/node_modules/.bin
+	add_to_path $HOME/.yarn/bin
 
 	export GOPATH="$HOME/go"
 }
