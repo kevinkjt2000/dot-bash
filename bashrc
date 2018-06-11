@@ -17,6 +17,7 @@ main() {
 }
 
 create_aliases() {
+	alias duchs='du -chs .[!.]* * | sort -rn'
 	alias grep='grep --color=auto --exclude=*~'
 	alias ls='ls --color=auto'
 	command_exists thefuck && eval $(thefuck --alias shimatta)
