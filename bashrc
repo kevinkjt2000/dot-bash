@@ -14,6 +14,7 @@ main() {
 	add_to_path $HOME/.yarn/bin
 
 	export GOPATH="$HOME/go"
+	add_to_path $HOME/go/bin
 }
 
 create_aliases() {
